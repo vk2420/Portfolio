@@ -24,7 +24,7 @@ A modern, professional portfolio website built with Next.js 14, TypeScript, Tail
 
 1. Clone the repository:
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/vk2420/Portfolio.git
 cd Portfolio
 ```
 
@@ -128,4 +128,3 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 Built with ❤️ using Next.js and TypeScript
-
