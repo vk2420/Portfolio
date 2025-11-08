@@ -8,16 +8,18 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "Vishal Khandelwal | AI & Product Innovation Professional",
+  title: "Vishal Khandelwal | AI + Product Innovator",
   description:
-    "AI and product innovation professional skilled in bridging technology, design, and business to deliver impactful digital solutions.",
+    "Portfolio of Vishal Khandelwal — AI Engineering Certified Product Builder creating scalable tech solutions for logistics, supply chain, and digital innovation.",
   keywords: [
     "AI",
-    "Product Innovation",
-    "UX Design",
+    "Product Management",
+    "Associate Product Manager",
     "Machine Learning",
-    "Full Stack Development",
-    "Product Analytics",
+    "React",
+    "Firebase",
+    "Supply Chain Technology",
+    "Product Innovation",
   ],
   authors: [{ name: "Vishal Khandelwal" }],
   creator: "Vishal Khandelwal",
@@ -25,16 +27,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://vishalkhandelwal.dev",
-    title: "Vishal Khandelwal | AI & Product Innovation Professional",
+    title: "Vishal Khandelwal | AI + Product Innovator",
     description:
-      "AI and product innovation professional skilled in bridging technology, design, and business to deliver impactful digital solutions.",
+      "Portfolio of Vishal Khandelwal — AI Engineering Certified Product Builder creating scalable tech solutions for logistics, supply chain, and digital innovation.",
     siteName: "Vishal Khandelwal Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vishal Khandelwal | AI & Product Innovation Professional",
+    title: "Vishal Khandelwal | AI + Product Innovator",
     description:
-      "AI and product innovation professional skilled in bridging technology, design, and business to deliver impactful digital solutions.",
+      "Portfolio of Vishal Khandelwal — AI Engineering Certified Product Builder creating scalable tech solutions for logistics, supply chain, and digital innovation.",
   },
   robots: {
     index: true,

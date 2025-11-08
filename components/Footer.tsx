@@ -24,10 +24,10 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="border-t border-border bg-muted/30">
+    <footer className="border-t border-gray-200 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-gray-600">
             © {new Date().getFullYear()} Vishal Khandelwal. All rights reserved.
           </p>
           <div className="flex items-center space-x-6">
@@ -39,7 +39,7 @@ export default function Footer() {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  className="text-gray-600 hover:text-blue-600 transition-colors"
                   whileHover={{ scale: 1.2, y: -2 }}
                   whileTap={{ scale: 0.9 }}
                   aria-label={link.name}
@@ -54,4 +54,3 @@ export default function Footer() {
     </footer>
   );
 }
-

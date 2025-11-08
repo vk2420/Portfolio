@@ -2,21 +2,25 @@
 
 export const personalInfo = {
   name: "Vishal Khandelwal",
-  title: "AI & Product Innovation Professional",
-  tagline: "Bridging Technology, Design & Business to Build Impactful Digital Products",
+  title: "AI + Product Innovator | Building scalable tech solutions that bridge operations and intelligence.",
+  tagline: "I'm an AI-driven problem solver passionate about designing products that simplify complex operational workflows and enhance user experience.",
   email: "kalibana001@gmail.com",
   phone: "+966-570529521",
   linkedin: "https://linkedin.com/in/vishal2410",
   github: "https://github.com/vk2420",
-  resume: "/resume.pdf", // Placeholder - add actual resume PDF
+  resume: "/resume.pdf",
 };
 
 export const about = {
-  bio: "AI and product innovation professional skilled in bridging technology, design, and business to deliver impactful digital solutions. Experienced in AI-driven product development, UX design, and operational analytics. Passionate about building SaaS products that enhance public service outcomes through data-driven decision-making and user-focused design.",
-  highlights: [
-    "AI-driven product development",
-    "UX design",
-    "Operational analytics",
+  bio: "I'm currently part of Landmark Group's Supply Chain team in Jeddah, where I build digital tools that enhance operational efficiency and data visibility. Having completed IBM's AI Engineering Certification, I combine analytical thinking with product development to create scalable solutions. I'm now looking to transition into an Associate Product Manager role to leverage my tech, AI, and operations experience in delivering impactful products.",
+  keySkills: [
+    "Product Strategy",
+    "Data Analysis",
+    "AI & ML Concepts",
+    "React.js",
+    "Python",
+    "Firebase",
+    "Cross-functional Collaboration",
   ],
 };
 
@@ -62,16 +66,15 @@ export const experience = [
   {
     company: "Landmark Group",
     position: "Executive Trainee (Supply Chain and Product Innovation)",
-    location: "On-Site",
+    location: "Jeddah, Saudi Arabia",
     duration: "July 2025 - Present",
     highlights: [
-      "Developed and prepared for rollout a Pallet Tracker system to monitor 20,000+ warehouse assets across multiple facilities — enabling real-time visibility, automated reporting, and improved accountability.",
-      "Prototyped a multi-warehouse container tracking solution aimed at reducing manual reporting by 70%; currently under review for implementation.",
-      "Designed and built an AI-assisted delivery communication tool integrating PDF parsing and OpenAI API for automated message generation (pilot phase pending approval).",
-      "Conducted process analysis to identify workflow inefficiencies, leading to operational recommendations projected to improve efficiency by ~25%.",
-      "Collaborated with product and operations teams to translate on-ground challenges into digital solutions that enhance data-driven decision-making.",
+      "Designed and implemented internal digital tools to enhance logistics visibility and process efficiency.",
+      "Collaborated with cross-functional teams to identify operational bottlenecks and translate them into scalable tech prototypes.",
+      "Conducted user feedback sessions to improve UI/UX of tracking systems.",
+      "Utilized AI-driven insights to support decision-making and reporting automation.",
     ],
-    logo: "/logos/landmark.png", // Placeholder
+    logo: "/logos/landmark.png",
   },
   {
     company: "PentaDots",
@@ -122,38 +125,52 @@ export const experience = [
 
 export const projects = [
   {
+    title: "Pallet Tracking System",
+    problem: "Lack of visibility across 20,000+ warehouse pallets.",
+    solution: "Designed and deployed a web-based tracking system using React and Firebase.",
+    impact: "Improved inventory visibility and process efficiency.",
+    tech: ["React", "Firebase", "Tailwind", "Vercel"],
+    image: "/projects/pallet.jpg",
+    github: "https://github.com/vk2420",
+    demo: "#",
+  },
+  {
+    title: "Container Tracking Solution",
+    problem: "Manual reporting processes causing delays and errors in multi-warehouse operations.",
+    solution: "Prototyped a multi-warehouse container tracking solution with real-time updates.",
+    impact: "Aimed at reducing manual reporting by 70% (under review for implementation).",
+    tech: ["React", "Firebase", "Python", "Vercel"],
+    image: "/projects/container.jpg",
+    github: "https://github.com/vk2420",
+    demo: "#",
+  },
+  {
+    title: "AI-Assisted Delivery Tracker",
+    problem: "Inefficient communication and manual message generation for delivery updates.",
+    solution: "Designed and built an AI-assisted delivery communication tool integrating PDF parsing and OpenAI API.",
+    impact: "Automated message generation, reducing manual work and improving response time (pilot phase).",
+    tech: ["React", "OpenAI API", "Python", "Firebase"],
+    image: "/projects/delivery.jpg",
+    github: "https://github.com/vk2420",
+    demo: "#",
+  },
+  {
     title: "AI Skin-Care Recommendation Platform",
-    description:
-      "Built AI + web platform recommending skincare routines by gender and skin type using React, Express, and ML classification models.",
-    tech: ["React", "Express", "Machine Learning", "Python"],
-    image: "/projects/skincare.jpg", // Placeholder
+    problem: "Difficulty finding accurate and personalized skincare suggestions online.",
+    solution: "Developed a full-stack AI skincare recommendation web app using React, Express, and ML models that suggests personalized skincare routines based on gender, age, and skin type.",
+    impact: "Provides accurate, personalized skincare recommendations, improving user experience in finding suitable products.",
+    tech: ["React", "Node.js", "Express", "ML Classification Models", "Firebase"],
+    image: "/projects/skincare.jpg",
     github: "https://github.com/vk2420",
     demo: "#",
   },
   {
     title: "Options Trading Assistant",
-    description:
-      "Designed backend system applying ML-based decision support to identify optimal option pairs with high success probability.",
-    tech: ["Python", "Machine Learning", "Backend"],
-    image: "/projects/trading.jpg", // Placeholder
-    github: "https://github.com/vk2420",
-    demo: "#",
-  },
-  {
-    title: "AI-Enabled Heart Attack Predictor",
-    description:
-      "Prototyped IoT-integrated wearable for real-time health risk prediction using biosensor data (On-Going).",
-    tech: ["IoT", "Machine Learning", "Python", "Biosensors"],
-    image: "/projects/health.jpg", // Placeholder
-    github: "https://github.com/vk2420",
-    demo: "#",
-  },
-  {
-    title: "Ab-initio Modeling (Academic Research)",
-    description:
-      "Computed optical and mechanical properties of FAPbI3 using DFT simulations (NITC Research Project).",
-    tech: ["DFT", "Simulations", "Research"],
-    image: "/projects/research.jpg", // Placeholder
+    problem: "Manual analysis time in options trading requiring extensive research to identify profitable opportunities.",
+    solution: "Designed a backend ML-based trading tool that identifies optimal options pairs with >85% success probability and >3.5 profit ratio, automating signal discovery.",
+    impact: "Reduced manual analysis time significantly while maintaining high success rates and profit ratios in options trading.",
+    tech: ["Python", "Pandas", "Scikit-learn", "Flask API", "Recharts"],
+    image: "/projects/trading.jpg",
     github: "https://github.com/vk2420",
     demo: "#",
   },

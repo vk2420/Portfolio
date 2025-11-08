@@ -9,16 +9,16 @@ export default function About() {
   const [imageError, setImageError] = useState(false);
 
   return (
-    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-blue-50/30">
       <div className="container mx-auto max-w-6xl">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12"
+          className="text-2xl sm:text-3xl md:text-4xl font-semibold text-center mb-12 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent"
         >
-          <span className="gradient-text">About Me</span>
+          About Me
         </motion.h2>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -30,7 +30,7 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="flex justify-center md:justify-end"
           >
-            <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-accent shadow-xl shadow-accent/30 bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 flex items-center justify-center">
+            <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-2xl overflow-hidden border-4 border-blue-500 shadow-xl bg-gradient-to-br from-blue-100 to-indigo-100 flex items-center justify-center ring-4 ring-blue-200/50">
               {!imageError ? (
                 <Image
                   src="/profile.jpg"
@@ -40,7 +40,7 @@ export default function About() {
                   onError={() => setImageError(true)}
                 />
               ) : (
-                <div className="text-6xl font-bold text-muted-foreground">
+                <div className="text-6xl font-bold text-gray-400">
                   VK
                 </div>
               )}
@@ -55,26 +55,27 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="space-y-6"
           >
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-base text-gray-600 leading-relaxed">
               {about.bio}
             </p>
-            <div className="space-y-2">
-              <h3 className="text-xl font-semibold">Key Focus Areas:</h3>
-              <ul className="space-y-2">
-                {about.highlights.map((highlight, index) => (
-                  <motion.li
-                    key={index}
-                    initial={{ opacity: 0, x: 10 }}
-                    whileInView={{ opacity: 1, x: 0 }}
+
+            {/* Key Skills Grid */}
+            <div className="space-y-3">
+              <h3 className="text-lg font-semibold text-gray-900">Key Skills</h3>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                {about.keySkills.map((skill, index) => (
+                  <motion.div
+                    key={skill}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.4, delay: index * 0.1 }}
-                    className="flex items-start gap-2"
+                    transition={{ duration: 0.3, delay: index * 0.05 }}
+                    className="px-4 py-2 bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-200 rounded-lg text-sm font-medium text-blue-900 shadow-sm hover:shadow-md hover:border-blue-300 transition-all"
                   >
-                    <span className="text-accent mt-1">▸</span>
-                    <span className="text-muted-foreground">{highlight}</span>
-                  </motion.li>
+                    {skill}
+                  </motion.div>
                 ))}
-              </ul>
+              </div>
             </div>
           </motion.div>
         </div>
@@ -82,4 +83,3 @@ export default function About() {
     </section>
   );
 }
-
