@@ -49,6 +49,11 @@ export default function Certifications() {
                   </div>
                   {getStatusIcon(cert.status)}
                 </div>
+                {"description" in cert && cert.description && (
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    {cert.description as string}
+                  </p>
+                )}
                 <div className="flex items-center justify-between pt-2 border-t border-border">
                   <span className="text-sm font-medium text-muted-foreground">
                     {cert.status}

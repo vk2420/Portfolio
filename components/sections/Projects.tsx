@@ -60,6 +60,11 @@ export default function Projects() {
 
               {/* Project Content */}
               <div className="p-6 space-y-4">
+                {"badge" in project && project.badge && (
+                  <span className="inline-block px-3 py-1 bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-xs font-bold rounded-full uppercase tracking-wide">
+                    {project.badge as string}
+                  </span>
+                )}
                 <h3 className="text-xl font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
                   {project.title}
                 </h3>
