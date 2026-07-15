@@ -3,8 +3,31 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { projects } from "@/data/portfolio";
-import { Github, ExternalLink } from "lucide-react";
+import {
+  Github,
+  ExternalLink,
+  ClipboardList,
+  Network,
+  Truck,
+  Boxes,
+  Container,
+  Building2,
+  Sparkles,
+  LineChart,
+  Rocket,
+} from "lucide-react";
 import Image from "next/image";
+
+const projectIcons: Record<string, typeof Rocket> = {
+  "Skill Matrix System": ClipboardList,
+  "KSA Home Network Optimizer": Network,
+  "AI-Assisted Delivery Tracker": Truck,
+  "Pallet Tracking System": Boxes,
+  "Container Tracking Platform": Container,
+  "Mulk AI": Building2,
+  "AI Skin-Care Recommendation Platform": Sparkles,
+  "Options Trading Assistant": LineChart,
+};
 
 export default function Projects() {
   const [imageErrors, setImageErrors] = useState<Record<number, boolean>>({});
@@ -51,7 +74,14 @@ export default function Projects() {
                 ) : (
                   <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-200 via-indigo-200 to-purple-200">
                     <div className="text-center p-4">
-                      <div className="text-4xl mb-2">🚀</div>
+                      {(() => {
+                        const Icon = projectIcons[project.title] ?? Rocket;
+                        return (
+                          <div className="mx-auto mb-3 w-14 h-14 rounded-full bg-white/70 flex items-center justify-center shadow-sm">
+                            <Icon className="h-7 w-7 text-indigo-700" />
+                          </div>
+                        );
+                      })()}
                       <p className="text-sm font-semibold text-indigo-900">{project.title}</p>
                     </div>
                   </div>

@@ -29,7 +29,7 @@ export const caseStudies: CaseStudy[] = [
     excerpt:
       "How I turned an invisible staffing problem into a system that saved 82,000 SAR in month one — and what the discovery process looked like from the inside.",
     category: "Case Study",
-    date: "2025-04-01",
+    date: "2026-06-01",
     readTime: "7 min read",
     image: "/case-studies/skill-matrix.jpg",
     content: {
@@ -69,7 +69,7 @@ export const caseStudies: CaseStudy[] = [
     excerpt:
       "Assigned directly by senior leadership to untangle KSA's entire home-delivery network — warehouses, stores, cross-docks, and feeder routes — starting with a visualization nobody had built before.",
     category: "Case Study",
-    date: "2025-07-15",
+    date: "2026-06-20",
     readTime: "6 min read",
     image: "/case-studies/network-optimizer.jpg",
     content: {
@@ -107,7 +107,7 @@ export const caseStudies: CaseStudy[] = [
     excerpt:
       "When the official system wouldn't give me the data I needed, I used the OpenAI API to extract it from the PDF trip sheets that already existed. A case study in shipping around a constraint instead of waiting for it to be removed.",
     category: "Case Study",
-    date: "2025-06-10",
+    date: "2025-11-01",
     readTime: "6 min read",
     image: "/case-studies/delivery-tracker.jpg",
     content: {
@@ -138,6 +138,45 @@ export const caseStudies: CaseStudy[] = [
         "Would extend to automated exception flagging — surfacing deliveries that are late or off-route without anyone needing to check the dashboard manually.",
     },
     tags: ["AI", "Product Engineering", "OpenAI API", "Operations"],
+  },
+  {
+    slug: "mulk-ai",
+    title: "Mulk AI: Why I Built the Rules Engine Before I Wrote a Single AI Prompt",
+    excerpt:
+      "An AI advisory agent for Dubai real estate investors — built in public, starting with a zero-LLM rules engine so the AI layer can never invent an eligibility answer.",
+    category: "Product Idea",
+    date: "2026-07-01",
+    readTime: "6 min read",
+    image: "/case-studies/mulk-ai.jpg",
+    content: {
+      overview:
+        "During a month in Dubai, I kept hearing the same story from property investors — confident advice from brokers with a commission incentive, seven-figure decisions made on WhatsApp forwards, no independent source that combined government rules with financing reality. Mulk AI is my attempt to build that source: an AI advisory agent that interviews an investor, applies Dubai's actual eligibility and financing rules, and grounds every recommendation in public data rather than an LLM's best guess.",
+      problem:
+        "First-time and overseas buyers in Dubai can't easily tell freehold zones from leasehold or nationals-only restrictions, or which developers banks will actually finance under CBUAE's LTV rules. The tools available are either commissioned brokers or generic AI chatbots that will confidently answer the same eligibility question two different ways if you ask it twice — a real risk at this decision size.",
+      solution:
+        "I deliberately built the unglamorous part first: a plain rules engine with zero LLM calls, covering tenure eligibility (freehold / leasehold / nationals-only) and financing eligibility (CBUAE's 50% off-plan LTV cap, developer tier, residency status). The architectural principle the whole product is built around: the engine decides, the AI only explains — if the two ever disagree, that's a bug, not a feature. The LLM-driven advisory layer and DLD transaction data integration come next, on top of a foundation that can't hallucinate an eligibility answer.",
+      impact:
+        "Rules engine shipped with 16 passing tests against real Dubai tenure and CBUAE financing logic. Announced and building in public on LinkedIn, using the same problem-first pattern that shaped every tool at Landmark: notice a real gap, validate it by talking to people living it, then build.",
+      keyFeatures: [
+        "Deterministic eligibility engine — tenure rules and CBUAE LTV caps, zero LLM calls in the decision path",
+        "16 passing tests grounded in real Dubai freehold/leasehold/nationals-only logic",
+        "Architecture designed so the AI layer can only explain a decision, never make one",
+        "Built and shared in public, with discovery calls driving the roadmap",
+      ],
+      techStack: ["Python", "Rules Engine", "RAG (planned)", "DLD Data (planned)", "LLM Advisory Layer (planned)"],
+      challenges: [
+        "Resisting the obvious shortcut of pointing an LLM at the confusion instead of encoding the actual rules first",
+        "Sourcing rules that are traceable to real regulation (DLD, CBUAE) rather than assumption",
+        "Validating the problem is real before building further — currently running 15-minute conversations with investors and agents",
+      ],
+      learnings: [
+        "The least exciting part of an AI product — the part with no AI in it — is often the part that has to be right before anything else can be trusted",
+        "Naming the architecture decision explicitly ('the engine decides, the AI only explains') makes the product's credibility legible to someone evaluating it in 30 seconds",
+      ],
+      nextSteps:
+        "Integrate DLD's public transaction data, then build the conversational advisory layer on top of the eligibility engine — in that order, deliberately.",
+    },
+    tags: ["AI Product", "Founder", "RAG", "Fintech", "Build in Public"],
   },
 ];
 

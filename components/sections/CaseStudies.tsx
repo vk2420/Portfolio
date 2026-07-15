@@ -3,8 +3,24 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { getAllCaseStudies } from "@/data/case-studies";
-import { Calendar, Clock, Tag } from "lucide-react";
+import {
+  Calendar,
+  Clock,
+  Tag,
+  ClipboardList,
+  Network,
+  Truck,
+  Building2,
+  Rocket,
+} from "lucide-react";
 import Image from "next/image";
+
+const caseStudyIcons: Record<string, typeof Rocket> = {
+  "skill-matrix-system": ClipboardList,
+  "ksa-home-network-optimizer": Network,
+  "ai-assisted-delivery-tracker": Truck,
+  "mulk-ai": Building2,
+};
 
 export default function CaseStudies() {
   const caseStudies = getAllCaseStudies();
@@ -63,7 +79,14 @@ export default function CaseStudies() {
                     ) : (
                       <div className="w-full h-full flex items-center justify-center">
                         <div className="text-center p-4">
-                          <div className="text-6xl mb-4">📊</div>
+                          {(() => {
+                            const Icon = caseStudyIcons[study.slug] ?? Rocket;
+                            return (
+                              <div className="mx-auto mb-4 w-16 h-16 rounded-full bg-white/70 flex items-center justify-center shadow-sm">
+                                <Icon className="h-8 w-8 text-purple-700" />
+                              </div>
+                            );
+                          })()}
                           <p className="text-lg font-semibold text-purple-900">{study.title}</p>
                         </div>
                       </div>

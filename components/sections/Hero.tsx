@@ -1,8 +1,25 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Download, FolderKanban, Truck, ArrowRight, Sparkles } from "lucide-react";
+import {
+  Download,
+  FolderKanban,
+  Truck,
+  ArrowRight,
+  Sparkles,
+  TrendingUp,
+  Network,
+  PackageSearch,
+  Boxes,
+} from "lucide-react";
 import { personalInfo } from "@/data/portfolio";
+
+const stats = [
+  { icon: TrendingUp, value: "1M SAR", label: "Projected annual savings" },
+  { icon: Network, value: "65M SAR", label: "Network initiative owned" },
+  { icon: PackageSearch, value: "8,000+", label: "Deliveries tracked" },
+  { icon: Boxes, value: "20,000+", label: "Pallets tracked" },
+];
 
 export default function Hero() {
   const scrollToProjects = () => {
@@ -91,6 +108,27 @@ export default function Hero() {
               <Download className="h-5 w-5" />
               Download Resume
             </motion.a>
+          </motion.div>
+
+          {/* Stats strip */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-10 max-w-3xl mx-auto"
+          >
+            {stats.map((stat) => (
+              <div
+                key={stat.label}
+                className="flex flex-col items-center gap-1.5 px-3 py-4 bg-white/70 backdrop-blur-sm border border-indigo-100 rounded-xl shadow-sm"
+              >
+                <stat.icon className="h-5 w-5 text-indigo-600" />
+                <span className="text-lg sm:text-xl font-bold text-gray-900">{stat.value}</span>
+                <span className="text-[11px] sm:text-xs text-gray-500 text-center leading-tight">
+                  {stat.label}
+                </span>
+              </div>
+            ))}
           </motion.div>
         </div>
       </div>
