@@ -2,8 +2,8 @@
 
 export const personalInfo = {
   name: "Vishal Khandelwal",
-  title: "Shipped a product saving 1M SAR annually | Presented to CEO at Landmark Group | Supply Chain AI PM",
-  tagline: "In April 2025 I presented a product I built independently to the CEO of Landmark Group. It had saved 82,000 SAR in its first month. Nobody asked me to build it — I saw the problem, built the solution, shipped it, and proved the impact.",
+  title: "Supply Chain Ops → Product Management | Shipped an AI Tool Saving 1M SAR/Year, Presented to the CEO",
+  tagline: "I run supply chain operations at Landmark Group. In April 2025 I presented a product I built independently to the CEO — it had saved 82,000 SAR in its first month. Nobody asked me to build it. I saw the problem on the floor, built the solution, shipped it, and proved the impact. That's the operating pattern I want to bring to a product team full-time.",
   email: "kalibana001@gmail.com",
   phone: "+966-570529521",
   linkedin: "https://linkedin.com/in/vishal2410",
@@ -12,7 +12,7 @@ export const personalInfo = {
 };
 
 export const about = {
-  bio: "Most enterprise tools fail not because of bad technology — but because nobody understood what actually happens on the floor before building them. I spent months inside Landmark Group's warehouse and logistics operations in KSA before writing a single line of code. That floor time changed how I think permanently.\n\nThen I started building — independently, without a dedicated engineering team, without ERP access, and against significant IT constraints. I built 6 operational tools, shipped one that saved 82,000 SAR in its first month (projected 1M SAR annually), presented it to the CEO, and am currently leading a 65M SAR network optimization initiative assigned directly by senior leadership.\n\nThree of my tools were cancelled because central product teams were already building identical solutions — without me knowing. That's not bad luck. It means my problem identification was calibrated correctly.\n\nIBM AI Product Manager | IBM AI Engineer | NIT Calicut | McKinsey Forward | Targeting APM, Product Analyst, and AI PM roles in GCC and India.",
+  bio: "I'm making a deliberate move from supply chain operations into product management — and I'm making the case with evidence, not just a career-change story. Most enterprise tools fail not because of bad technology, but because nobody understood what actually happens on the floor before building them. I spent months inside Landmark Group's warehouse and logistics operations in KSA before writing a single line of code. That floor time is exactly what most product hires don't have, and it's the edge I bring.\n\nThen I started building — independently, without a dedicated engineering team, without ERP access, and against significant IT constraints. I built 6 operational tools, shipped one that saved 82,000 SAR in its first month (projected 1M SAR annually), presented it to the CEO, and am currently leading a 65M SAR network optimization initiative assigned directly by senior leadership. Every one of those started the same way a PM's work should: find the real problem, validate it with the people living it, ship something, measure the impact.\n\nThree of my tools were cancelled because central product teams were already building identical solutions — without me knowing. That's not bad luck. It means my problem identification was calibrated correctly.\n\nIBM AI Product Manager | IBM AI Engineer | NIT Calicut | McKinsey Forward | Targeting APM, Product Analyst, and AI PM roles in GCC and India.",
   keySkills: [
     "Product Strategy",
     "User Research & Discovery",

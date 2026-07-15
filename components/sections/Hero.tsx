@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Download, FolderKanban } from "lucide-react";
+import { Download, FolderKanban, Truck, ArrowRight, Sparkles } from "lucide-react";
 import { personalInfo } from "@/data/portfolio";
 
 export default function Hero() {
@@ -20,6 +20,20 @@ export default function Hero() {
       
       <div className="container mx-auto max-w-4xl relative z-10">
         <div className="text-center space-y-6">
+          {/* Transition badge */}
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/80 border border-indigo-200 rounded-full shadow-sm text-xs sm:text-sm font-semibold text-indigo-700"
+          >
+            <Truck className="h-3.5 w-3.5" />
+            <span>Supply Chain Ops</span>
+            <ArrowRight className="h-3.5 w-3.5 text-purple-500" />
+            <Sparkles className="h-3.5 w-3.5" />
+            <span>Product Management</span>
+          </motion.div>
+
           {/* Name */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
