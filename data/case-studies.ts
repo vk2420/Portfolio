@@ -40,7 +40,7 @@ export const caseStudies: CaseStudy[] = [
       solution:
         "I treated this like a product problem, not an IT ticket. First, discovery: 40+ structured interviews with supervisors to identify the actual skill parameters that mattered for job assignment — not the ones I assumed mattered. Second, validation: I built a lightweight Excel version first and got it approved by leadership before writing any application code, so I wasn't betting engineering time on an unvalidated hypothesis. Only after that did I build the full system implementation and present it directly to the CEO.",
       impact:
-        "82,000 SAR saved in the first month of use. Projected 1M SAR in annual savings. The system is live and actively used by operations leadership for team formation decisions — not a pilot that stalled after the demo.",
+        "82,000 SAR saved in the first month of use — the figure I presented to the CEO. At that verified monthly rate the tool is on track for 175,000+ SAR across the current quarter, which extrapolates to roughly 1M SAR annually if adoption holds. The 82K is measured; the quarter and annual numbers are run-rate projections from it. The system is live and actively used by operations leadership for team formation decisions — not a pilot that stalled after the demo.",
       keyFeatures: [
         "Structured skill taxonomy built from real supervisor input, not assumptions",
         "Excel-first validation layer before any engineering investment",

@@ -15,7 +15,7 @@ import {
 import { personalInfo } from "@/data/portfolio";
 
 const stats = [
-  { icon: TrendingUp, value: "1M SAR", label: "Projected annual savings" },
+  { icon: TrendingUp, value: "82K SAR", label: "Saved per month, verified" },
   { icon: Network, value: "65M SAR", label: "Network initiative owned" },
   { icon: PackageSearch, value: "8,000+", label: "Deliveries tracked" },
   { icon: Boxes, value: "20,000+", label: "Pallets tracked" },

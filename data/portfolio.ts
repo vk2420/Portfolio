@@ -2,7 +2,7 @@
 
 export const personalInfo = {
   name: "Vishal Khandelwal",
-  title: "Supply Chain Ops → Product Management | Shipped an AI Tool Saving 1M SAR/Year, Presented to the CEO",
+  title: "Supply Chain Ops → Product | Shipped a workforce optimization tool now saving 82K SAR/month, on track for 175K+ this quarter",
   tagline: "I run supply chain operations at Landmark Group. In June 2026 I presented a product I built independently to the CEO — it had saved 82,000 SAR in its first month. Nobody asked me to build it. I saw the problem on the floor, built the solution, shipped it, and proved the impact. That's the operating pattern I want to bring to a product team full-time.",
   email: "kalibana001@gmail.com",
   phone: "+966-570529521",
@@ -85,7 +85,7 @@ export const experience = [
     company: "PentaDots",
     position: "UI/UX Designer Intern",
     location: "Remote",
-    duration: "Oct 2023 - Jan 2024",
+    duration: "Nov 2023 - May 2024",
     highlights: [
       "Research and Testing: Conducted iterative user research and feedback testing, aligning design outputs with user goals and business requirements.",
       "Collaboration: Collaborated with developers to ensure consistent design implementation and interaction accuracy across web platforms.",
@@ -134,7 +134,7 @@ export const projects = [
     badge: "SHIPPED · CEO Presentation",
     problem: "No visibility into delivery and furniture installation team skill sets — managers couldn't form optimal teams or track capability gaps across 40+ staff.",
     solution: "Conducted 40+ supervisor interviews to identify skill parameters. Built Excel version (approved by leadership), then developed full system implementation. Presented results directly to CEO.",
-    impact: "82,000 SAR saved in first month. Projected 1M SAR annual saving. Live and actively used by operations leadership.",
+    impact: "82,000 SAR saved in first month (measured). On track for 175,000+ SAR this quarter at that run rate; projected ~1M SAR annually. Live and actively used by operations leadership.",
     tech: ["React", "Firebase", "Python", "Excel", "Data Analysis"],
     image: "/projects/skillmatrix.jpg",
     github: "https://github.com/vk2420",

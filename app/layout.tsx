@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 export const metadata: Metadata = {
   title: "Vishal Khandelwal | Supply Chain Ops → Product Manager",
   description:
-    "Portfolio of Vishal Khandelwal — supply chain operator moving into product management. Shipped AI tools saving 1M SAR annually at Landmark Group, presented directly to the CEO. Targeting APM, Product Analyst, and AI PM roles in GCC and India.",
+    "Portfolio of Vishal Khandelwal — supply chain operator moving into product management. Shipped a workforce optimization tool at Landmark Group now saving 82,000 SAR/month, presented directly to the CEO. Targeting APM, Product Analyst, and AI PM roles in GCC and India.",
   keywords: [
     "Product Management",
     "Associate Product Manager",
@@ -31,14 +31,14 @@ export const metadata: Metadata = {
     url: "https://vishalkhandelwal.dev",
     title: "Vishal Khandelwal | Supply Chain Ops → Product Manager",
     description:
-      "Portfolio of Vishal Khandelwal — supply chain operator moving into product management. Shipped AI tools saving 1M SAR annually at Landmark Group, presented directly to the CEO. Targeting APM, Product Analyst, and AI PM roles in GCC and India.",
+      "Portfolio of Vishal Khandelwal — supply chain operator moving into product management. Shipped a workforce optimization tool at Landmark Group now saving 82,000 SAR/month, presented directly to the CEO. Targeting APM, Product Analyst, and AI PM roles in GCC and India.",
     siteName: "Vishal Khandelwal Portfolio",
   },
   twitter: {
     card: "summary_large_image",
     title: "Vishal Khandelwal | Supply Chain Ops → Product Manager",
     description:
-      "Portfolio of Vishal Khandelwal — supply chain operator moving into product management. Shipped AI tools saving 1M SAR annually at Landmark Group, presented directly to the CEO.",
+      "Portfolio of Vishal Khandelwal — supply chain operator moving into product management. Shipped a workforce optimization tool at Landmark Group now saving 82,000 SAR/month, presented directly to the CEO.",
   },
   robots: {
     index: true,
